@@ -1,0 +1,115 @@
+/*open sans*/
+@font-face {
+    font-family: 'gillsansmt';
+    src: url('33535gillsansmt.eot');
+    src: local('33535gillsansmt'), url('./33535gillsansmt.woff') format('woff'), url('./33535gillsansmt.ttf') format('truetype');
+}
+
+header {
+    background-image: url('img/pexels-photo-430207.jpeg');
+    background-size: cover;
+    height: 500px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+header h1, header h2 {
+    margin: 0;
+
+}
+#experiences h3{
+    background-color:#f4d3eb;
+}
+
+.black-box {
+    font-family:'Open Sans', sans-serif;
+    padding: 30px 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+.black-box p{
+    text-align: center;
+}
+header h1 {
+    font-size: 56px;
+    margin-bottom:10px;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+body {
+    padding-top: 50px;
+    font-family:'gillsansmt', sans-serif;
+    font-size:18px;
+}
+
+body .navbar-default, body.navbar-inverse{
+    border:0;
+    background:transparent;
+}
+body .navbar-default .navbar-content{
+    background-color: #222;
+    border-color: #080808;
+    padding:0 15px;
+    font-size: 16px;
+}
+body .navbar-nav{
+    float:none;
+    text-align:justify;
+    height: 50px;
+}
+body .navbar-nav:after{
+    content:"";
+    line-height:0;
+    height:0;
+    width:100%;
+    display:inline-block;
+}
+
+body .navbar-nav>li{
+    float:none;
+}
+body .nav>li{
+    display:inline-block;
+}
+.black-box .head-icon{
+    font-size:20px;
+}
+.head-icon + .head-icon{
+    margin-left:20px;
+}
+p.icons-list{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size:20px;
+}
+
+#sarah-photo{
+    border-radius:1000px;
+    overflow:hidden;
+    border:7px solid #007fc2;
+    width:360px;
+    position:absolute;
+    top:50%;
+    left:-420px;
+    margin-top:-180px;
+}
+
+h3{
+    background-color: #007fc2;
+    color:white;
+    display:inline-block;
+    text-transform: uppercase;
+    padding:5px 8px;
+}
+
+p{
+    text-align:justify;
+}
+.relative{
+    position:relative;
+}
