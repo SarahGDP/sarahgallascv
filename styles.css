@@ -1,21 +1,61 @@
-/*open sans*/
-@font-face {
-    font-family: 'gillsansmt';
-    src: url('33535gillsansmt.eot');
-    src: local('33535gillsansmt'), url('./33535gillsansmt.woff') format('woff'), url('./33535gillsansmt.ttf') format('truetype');
-}
-
 header {
-    background-image: url('img/pexels-photo-430207.jpeg');
-    background-size: cover;
+    /*background-image: url('img/pexels-photo-430207.jpeg');*/
+    /*background-size: cover;*/
     height: 500px;
     padding-top: 200px;
     text-align: center;
 }
-
+.container{
+    background-image: url('img/pexels-photo-430207.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+}
 header h1, header h2 {
     margin: 0;
+}
+section{
+    margin-bottom:10px;
+}
+.section-rose{
+    background-color:#f4d3eb;
+}
+#experiences{
+    background-color:#007fc2;
+    color:white;
+}
 
+.carousel{
+    position:relative;
+    height:400px;
+
+}
+.carousel .slide{
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.carousel .slide.active{
+    display:block;
+}
+
+
+
+
+#formations{
+    background-color:#222;
+    color:#007fc2;
+}
+#formations h3{
+    background-color:#007fc2;
+}
+#formations-pic{
+    width:250px;
+}
+#formations h4{
+    color:white;
+    font-size:1.0em;
+    text-transform: uppercase;
 }
 #experiences h3{
     background-color:#f4d3eb;
@@ -36,14 +76,17 @@ header h1 {
     font-size: 56px;
     margin-bottom:10px;
 }
-
+.margin-h-20{
+    margin-left:20px;
+    margin-right:20px;
+}
 header h2 {
     font-size: 28px;
 }
 
 body {
     padding-top: 50px;
-    font-family:'gillsansmt', sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size:18px;
 }
 
@@ -91,25 +134,35 @@ p.icons-list{
 #sarah-photo{
     border-radius:1000px;
     overflow:hidden;
-    border:7px solid #007fc2;
+    border:7px solid #000;
     width:360px;
     position:absolute;
     top:50%;
     left:-420px;
     margin-top:-180px;
 }
-
 h3{
-    background-color: #007fc2;
     color:white;
     display:inline-block;
     text-transform: uppercase;
     padding:5px 8px;
+    margin-bottom:15px;
+    background-color:#000;
 }
-
-p{
-    text-align:justify;
+h4{
+    font-size:1.6em;
+}
+p.subtitle{
+    font-size:1.2em;
+    color:rgba(255,255,255,0.8);
+    font-weight:bold;
+    margin-top:-10px;
 }
 .relative{
     position:relative;
+}
+
+a:link{
+    color:inherit;
+    text-decoration:underline;
 }
