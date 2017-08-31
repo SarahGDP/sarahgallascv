@@ -33,10 +33,14 @@ section{
     position:absolute;
     top:0;
     left:0;
-    display:none;
+    border:10px solid white;
+    border-bottom-width:50px;
+    height:300px;
+    width:300px;
+    overflow:hidden;
 }
 .carousel .slide.active{
-    display:block;
+    z-index:2;
 }
 
 

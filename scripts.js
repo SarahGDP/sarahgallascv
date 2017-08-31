@@ -3,11 +3,17 @@ $(document).ready(function(){
     setInterval(function(){
         var carousels = $('.carousel');
         carousels.each(function(key,elem){
+            var active;
             if($(elem).find('.active').length && $(elem).find('.active').next('.slide').length){
-                $(elem).find('.active').removeClass('active').next('.slide').addClass('active');
+                active = $(elem).find('.active').removeClass('active').next('.slide').addClass('active');
             }else{
-                $(elem).find('.slide').first().addClass('active');
+                $(elem).find('.active').removeClass('active');
+                active = $(elem).find('.slide').first().addClass('active');
             }
+
+            //active.css({
+            //    transform:'rotate('+((Math.random()*40)-20)+'deg)'
+            //})
         });
     },4000);
 });
