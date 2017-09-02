@@ -14,20 +14,22 @@ header h1, header h2 {
     margin: 0;
 }
 section{
-    margin-bottom:10px;
+    margin-bottom:60px;
+    padding-bottom:50px;
+    box-shadow:0 0 15px black;
 }
 .section-rose{
     background-color:#f4d3eb;
 }
-#experiences{
+.section-bleue{
     background-color:#007fc2;
     color:white;
 }
-
+#skills-img{
+    border-radius:10000px;
+}
 .carousel{
     position:relative;
-    height:400px;
-
 }
 .carousel .slide{
     position:absolute;
@@ -42,27 +44,81 @@ section{
 .carousel .slide.active{
     z-index:2;
 }
+.float-links{
+    position:absolute;
+    bottom:-30px;
+    height:30px;
+    background-color:#13aa98;
+    padding:5px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left:10px;
+    font-size:16px;
+    box-shadow:0 0 15px 1px black;
+    transition-property:padding-top,height,bottom;
+    transition-duration:400ms;
+}
+.float-links:hover{
+    padding-top:15px;
+    height:40px;
+    bottom:-40px;
+}
+.navbar-content{
+    box-shadow:0 0 10px 0px black;
+}
+.float-links a:link{
+    color:white;
+}
+#contact-link{
+    background-color:#007fc2;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding:20px 30px;
+    border-radius:15px;
+}
+#contact-link:hover{
+    background-color:#118fd2;
+}
 
-
-
-
-#formations{
+.section-noire{
     background-color:#222;
     color:#007fc2;
 }
-#formations h3{
+.section-noire h3, .section-noire .highlight{
     background-color:#007fc2;
+}
+.section-noire a:link{
+    color:white;
 }
 #formations-pic{
     width:250px;
 }
-#formations h4{
+.section-noire h4{
     color:white;
     font-size:1.0em;
     text-transform: uppercase;
+    margin-left:25px;
 }
-#experiences h3{
+.section-noire h4 .fa{
+    text-indent:-25px;
+}
+#formations p{
+    margin-left:25px;
+}
+.highlight{
+    padding:0 5px;
+}
+.section-rose .highlight{
+    background-color:black;
+    color:white;
+}
+.section-bleue h3, .section-bleue .highlight{
     background-color:#f4d3eb;
+    color:#007fc2;
+}
+.section-bleue a:link{
+    color:#f4d3eb;
 }
 
 .black-box {
@@ -72,6 +128,7 @@ section{
     background-color: black;
     color: white;
     display: inline-block;
+    box-shadow:0 0 40px black;
 }
 .black-box p{
     text-align: center;
@@ -150,7 +207,7 @@ h3{
     display:inline-block;
     text-transform: uppercase;
     padding:5px 8px;
-    margin-bottom:15px;
+    margin-bottom:50px;
     background-color:#000;
 }
 h4{
@@ -169,4 +226,90 @@ p.subtitle{
 a:link{
     color:inherit;
     text-decoration:underline;
+}
+
+.quote{
+    color:white;
+}
+.quote:before{
+    content:"«";
+    margin-right:5px;
+    display:inline-block;
+    color:#AAA;
+    font-size:1.4em;
+    line-height:25px;
+}
+.quote:after{
+    content:"»";
+    margin-left:5px;
+    display:inline-block;
+    color:#AAA;
+    font-size:1.4em;
+    line-height:25px;
+}
+h5{
+   font-size:16px;
+    margin-bottom:20px;
+}
+
+/**EXPERIENCES**/
+
+.experience-item{
+    position:relative;
+    border-left:3px solid white;
+    padding-left:40px;
+    margin-bottom:80px;
+    padding-right:40px;
+}
+.experience-item:before{
+    content:"";
+    height:20px;
+    width:20px;
+    background-color:#f4d3eb;
+    position:absolute;
+    top:-30px;
+    left:-11px;
+    transform:rotate(45deg);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.experience-item h4{
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.experience-item .exp-title{
+    margin-top:-35px;
+    font-weight:bold;
+    border-bottom:5px solid #007fc2;
+    background-color:#f4d3eb;
+    color:#007fc2;
+    position:relative;
+    width:50%;
+    padding:3px 15px 2px;
+    text-transform: uppercase;
+    overflow:hidden;
+}
+
+.experience-item .exp-title:before{
+    content:"";
+    top:0;
+    bottom:0;
+    left:-300%;
+    right:100%;
+    position:absolute;
+    background-color:#007fc2;
+    transition-property: right,left;
+    transition-duration: 1s;
+}
+
+.experience-item:hover:before{
+    transform:rotate(495deg);
+}
+.experience-item:hover .exp-title:before{
+    right:-100%;
+    left:100%;
+}
+.experience-item .exp-title span{
+    position:relative;
+    z-index:2;
 }
