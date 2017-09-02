@@ -17,3 +17,13 @@ $(document).ready(function(){
         });
     },4000);
 });
+
+
+
+
+(function(){
+    "use strict";
+    $(document).ready(function(){
+        $('#contact-link').attr('href','mailto:gallas.sarah@gmail.com');
+    });
+})();
